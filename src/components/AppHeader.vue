@@ -10,7 +10,21 @@ export default {
 
 <template>
 <main>
-    <h1>HEADER</h1>
+    <img src="../assets/img/dc-logo.png" alt="dc-logo">
+
+    <nav>
+        <ul>
+            <li>characters</li>
+            <li>comics</li>
+            <li>movies</li>
+            <li>tv</li>
+            <li>games</li>
+            <li>collectibles</li>
+            <li>videos</li>
+            <li>news</li>
+            <li>shop</li>
+        </ul>
+    </nav>
 </main>
 </template>
 
