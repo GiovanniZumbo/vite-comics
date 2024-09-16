@@ -2,24 +2,16 @@
 export default {
     data() {
         return {
-            //  navSections: [
+            dcComicsLinks: [
+                "Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"
+            ],
 
-            //       {
-            //         name: "dcComics",
-            //         navLinks: [
-            //              "characters","comics","movies","tv","games","collectibles","videos", "fans", "news", "shop"
-            //         ] 
-            //     },
+            shopLinks: ["Shop DC", "Shop DC Collectibles"],
 
-            //      {
-            //         name: "shop",
-            //          navLInks: [ "Shop DC", "Shop DC Collectibles"]
-            //     },
+            dcLinks: ["Terms of Use", "Privacy Policy (New)", "Ad choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact us"],
 
-            //     { name: "dc",
-            //         navLinks: ["Terms of Use","Privacy Policy", "Ad choices"]
-            //     }
-            // ]
+            sitesLinks: ["DC", "MAD Magazine", "DCkids", "DC Universe", "DC Power Visa"]
+
         }
     }
 }
@@ -34,46 +26,28 @@ export default {
                     <div class="nav-links">
                         <h3>DC COMICS</h3>
                         <ul>
-                            <li>characters</li>
-                            <li>comics</li>
-                            <li>movies</li>
-                            <li>tv</li>
-                            <li>games</li>
-                            <li>collectibles</li>
+                            <li v-for="link in dcComicsLinks">{{ link }}</li>
                         </ul>
                     </div>
 
                     <div class="nav-links">
                         <h3>SHOP</h3>
                         <ul>
-                            <li>characters</li>
-                            <li>comics</li>
+                            <li v-for="link in shopLinks">{{ link }}</li>
                         </ul>
                     </div>
 
                     <div class="nav-links">
                         <h3>DC</h3>
                         <ul>
-                            <li>characters</li>
-                            <li>comics</li>
-                            <li>movies</li>
-                            <li>tv</li>
-                            <li>games</li>
-                            <li>collectibles</li>
-                            <li>videos</li>
-                            <li>news</li>
-                            <li>shop</li>
+                            <li v-for="link in dcLinks">{{ link }}</li>
                         </ul>
                     </div>
 
                     <div class="nav-links">
                         <h3>SITES</h3>
                         <ul>
-                            <li>characters</li>
-                            <li>comics</li>
-                            <li>movies</li>
-                            <li>tv</li>
-
+                            <li v-for="link in sitesLinks">{{ link }}</li>
                         </ul>
                     </div>
                 </div>
