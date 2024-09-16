@@ -10,7 +10,9 @@ export default {
 
 <template>
 <main>
-    <h1>MAIN</h1>
+     <div>
+            <h2> --> Content goes here <-- </h2>
+   </div>
 </main>
 </template>
 

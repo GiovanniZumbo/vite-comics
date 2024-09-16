@@ -10,6 +10,7 @@ export default {
 
 <template>
 <main>
+    <div>
     <img src="../assets/img/dc-logo.png" alt="dc-logo">
 
     <nav>
@@ -25,6 +26,7 @@ export default {
             <li>shop</li>
         </ul>
     </nav>
+</div>
 </main>
 </template>
 
