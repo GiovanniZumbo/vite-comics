@@ -30,7 +30,7 @@ export default {
     <footer>
         <section id="footer-navbar">
                 <div class="container">
-                    <div> 
+                    <div class="nav-links"> 
                         <h3>DC COMICS</h3>
                             <ul>
             <li>characters</li>
@@ -42,14 +42,16 @@ export default {
                          </ul>
                     </div>
 
-                    <div> <h3>SHOP</h3>
+                    <div class="nav-links">
+                         <h3>SHOP</h3>
                         <ul>
             <li>characters</li>
             <li>comics</li>
                         </ul>
                     </div>
 
-                    <div> <h3>DC</h3>
+                    <div class="nav-links">
+                         <h3>DC</h3>
                         <ul>
             <li>characters</li>
             <li>comics</li>
@@ -63,7 +65,8 @@ export default {
                         </ul>
                      </div>
 
-                    <div> <h3>SITES</h3>
+                    <div class="nav-links">
+                         <h3>SITES</h3>
                          <ul>
             <li>characters</li>
             <li>comics</li>
@@ -112,7 +115,21 @@ footer{
     .container{
         height: 100%;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         gap: 15px;
+
+    .nav-links{
+
+        h3{
+            margin-bottom: 10px;
+        }
+
+        ul li{
+            margin: 5px 0;
+        }
+    }
+
     }
 }
 
@@ -125,6 +142,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
 
         a{
             text-decoration: none;

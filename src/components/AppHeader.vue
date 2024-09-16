@@ -36,7 +36,7 @@ export default {
  
  main{
     background-color: white;
-    height: 15vh;
+    height: 130px;
  }
 
  .container{
@@ -54,6 +54,15 @@ export default {
     li{
         text-transform: uppercase;
         font-weight: bold;
+        padding: 53px 0;
+        border-bottom: 5px solid transparent;
+    }
+
+
+    li:hover{
+      border-bottom: 5px solid #0282fa;
+      color: #0282fa;
+      cursor: pointer;
     }
  }
 
