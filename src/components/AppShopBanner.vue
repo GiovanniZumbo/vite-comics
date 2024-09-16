@@ -47,7 +47,7 @@ main {
   display: flex;
 
   .buying-section {
-    padding: 40px 0;
+    padding: 40px 20px;
     display: flex;
     align-items: center;
     flex-basis: 20%;

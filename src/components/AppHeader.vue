@@ -17,15 +17,8 @@ export default {
 
       <nav>
         <ul>
-          <li>characters</li>
-          <li>comics</li>
-          <li>movies</li>
-          <li>tv</li>
-          <li>games</li>
-          <li>collectibles</li>
-          <li>videos</li>
-          <li>news</li>
-          <li>shop</li>
+          <li v-for="link in navLinks">{{ link }}</li>
+
         </ul>
       </nav>
     </div>
