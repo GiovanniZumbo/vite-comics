@@ -3,6 +3,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppShopBanner from './components/AppShopBanner.vue';
 
 // // imported font
 // import "@fontsource/oswald";
@@ -20,7 +21,8 @@ export default {
 components: {
   AppHeader,
   AppMain,
-  AppFooter
+  AppFooter,
+  AppShopBanner
 }
 
 }
@@ -33,6 +35,7 @@ components: {
 
       <AppHeader/>
       <AppMain/>
+      <AppShopBanner/>
       <AppFooter/>
 
 </div>
