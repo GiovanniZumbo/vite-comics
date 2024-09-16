@@ -2,7 +2,9 @@
 export default {
   data() {
     return {
-      
+      navLinks:[
+        "characters","comics","movies","tv","games","collectibles","videos", "fans", "news", "shop"
+      ]
     }
   }
 }
@@ -10,7 +12,7 @@ export default {
 
 <template>
 <main>
-    <div>
+    <div class="container">
     <img src="../assets/img/dc-logo.png" alt="dc-logo">
 
     <nav>
@@ -30,5 +32,30 @@ export default {
 </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+ 
+ main{
+    background-color: white;
+    height: 120px;
+ }
+
+ .container{
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+
+    li{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+ }
+
 </style>
