@@ -1,14 +1,18 @@
 // reset
 
+:root{
+    --electric-blue: #0282fa;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-// body {
-//     font-family: "Oswald";
-// }
+ body {
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
 
 .container {
     margin: 0 auto;
