@@ -36,7 +36,7 @@ export default {
  
  main{
     background-color: white;
-    height: 120px;
+    height: 15vh;
  }
 
  .container{
@@ -49,7 +49,6 @@ export default {
  
  ul{
     display: flex;
-    list-style-type: none;
     gap: 10px;
 
     li{
