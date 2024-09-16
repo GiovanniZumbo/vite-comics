@@ -1,5 +1,5 @@
 <script>
-
+// Imported components
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
@@ -23,11 +23,18 @@ components: {
 </script>
 
 <template>
-<AppHeader/>
-<AppMain/>
-<AppFooter/>
+
+  <div class="container">
+
+      <AppHeader/>
+      <AppMain/>
+      <AppFooter/>
+
+</div>
+
 </template>
 
-<style scoped>
+<style lang="scss">
+@use "./styles/generics.scss" as *;
 
 </style>
