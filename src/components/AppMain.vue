@@ -91,8 +91,8 @@ export default {
   <main>
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="card" v-for="(comic, i) in comicsList">
+        <div class="col" v-for="comic in comicsList">
+          <div class="card">
             <ComicCard :thumbUrl="comic.thumb" :series="comic.series" />
           </div>
         </div>
@@ -108,6 +108,19 @@ main {
 
 .container {
   padding: 50px 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.col {
+  flex-basis: calc((100%/6) - 10px);
+  height: 250px;
 }
 
 h2 {

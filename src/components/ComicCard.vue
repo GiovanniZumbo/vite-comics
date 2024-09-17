@@ -24,26 +24,27 @@ export default {
 <template>
 
     <figure class="comic-card">
-        <img :src="thumbUrl" alt="">
-        <figcaption> {{ series }} </figcaption>
+        <img :src="thumbUrl" alt="{{ series }}">
+        <figcaption> {{ series.toUpperCase() }} </figcaption>
     </figure>
 
 </template>
 
 <style lang="scss" scoped>
 .comic-card {
-    width: 200px;
-    aspect-ratio: 1;
-
+    width: 100%;
+    cursor: pointer;
 
     img {
-        max-width: 100%;
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
     }
 
     figcaption {
         color: white;
+        font-size: 14px;
+        text-align: center
     }
-
-
 }
 </style>
