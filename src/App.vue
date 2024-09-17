@@ -4,6 +4,8 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppShopBanner from './components/AppShopBanner.vue';
+import ComicCard from './components/ComicCard.vue';
+
 
 // // imported font
 // import "@fontsource/oswald";
@@ -18,32 +20,34 @@ export default {
     }
   },
 
-components: {
-  AppHeader,
-  AppMain,
-  AppFooter,
-  AppShopBanner
-}
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter,
+    AppShopBanner,
+    ComicCard
+  }
 
 }
 
 </script>
 
 <template>
-<body>
-  <div>
 
-      <AppHeader/>
-      <AppMain/>
-      <AppShopBanner/>
-      <AppFooter/>
+  <body>
+    <div>
 
-</div>
-  
-</body>
+      <AppHeader />
+      <AppMain />
+      <AppShopBanner />
+      <AppFooter />
+      <ComicCard />
+
+    </div>
+
+  </body>
 </template>
 
 <style lang="scss">
 @use "./styles/generics.scss" as *;
-
 </style>
