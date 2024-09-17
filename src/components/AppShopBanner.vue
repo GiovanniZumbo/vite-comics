@@ -2,7 +2,33 @@
 export default {
   data() {
     return {
-
+      shopItemList: [
+        {
+          name: "DIGITAL COMICS",
+          icon: "../assets/img/buy-comics-digital-comics.png"
+        },
+        {
+          name: "DC MERCHANDISE",
+          icon: "../assets/img/buy-comics-merchandise.png"
+        },
+        {
+          name: "SUBSCRIPTION",
+          icon: "../assets/img/buy-comics-subscriptions.png"
+        },
+        {
+          name: "COMIC SHOP LOCATOR",
+          icon: "../assets/img/buy-comics-shop-locator.png"
+        },
+        {
+          name: "DC POWER VISA",
+          icon: "../assets/img/buy-dc-power-visa.svg"
+        }
+      ]
+    }
+  },
+  methods: {
+    getImagePath: function (imgPath) {
+      return new URL(imgPath, import.meta.url).href;
     }
   }
 }
@@ -11,28 +37,12 @@ export default {
 <template>
   <main>
     <div class="container">
-      <div class="buying-section">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-        <a href="#">DIGITAL COMICS</a>
+
+      <div class="buying-section" v-for="shopItem in shopItemList">
+        <img :src="getImagePath(shopItem.icon)" alt="">
+        <a href="#">{{ shopItem.name }}</a>
       </div>
 
-      <div class="buying-section">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <a href="#">DC MERCHANDISE</a>
-      </div>
-
-      <div class="buying-section">
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-        <a href="#">SUBSCRIPTION</a>
-      </div>
-      <div class="buying-section">
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-        <a href="#">COMIC SHOP LOCATOR</a>
-      </div>
-      <div class="buying-section">
-        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-        <a href="#">DC POWER VISA</a>
-      </div>
     </div>
   </main>
 </template>
