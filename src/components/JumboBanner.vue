@@ -24,16 +24,12 @@ export default {
 <style lang="scss" scoped>
 main {
 
-
-    // css
-
     height: 500px;
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
     position: relative;
-
 
     .jumbo-content {
         width: 100%;

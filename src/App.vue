@@ -23,7 +23,6 @@ export default {
     JumboBanner
 
   }
-
 }
 
 </script>
@@ -38,7 +37,6 @@ export default {
       <AppMain />
       <AppShopBanner />
       <AppFooter />
-      <ComicCard />
 
     </div>
 

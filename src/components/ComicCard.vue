@@ -35,6 +35,8 @@ export default {
     width: 100%;
     cursor: pointer;
 
+    transition: all .2s ease-in-out;
+
     img {
         width: 200px;
         height: 200px;
@@ -47,7 +49,7 @@ export default {
         text-align: center
     }
 
-    transition: all .2s ease-in-out;
+
 
     &:hover {
         transform: scale(1.2);
