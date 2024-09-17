@@ -1,5 +1,6 @@
 <script>
 import ComicCard from './ComicCard.vue';
+import PageButton from './PageButton.vue';
 import SectionLabel from './SectionLabel.vue';
 
 export default {
@@ -84,7 +85,8 @@ export default {
 
   components: {
     ComicCard,
-    SectionLabel
+    SectionLabel,
+    PageButton
   }
 }
 </script>
@@ -101,6 +103,8 @@ export default {
           </div>
         </div>
       </div>
+
+      <PageButton />
     </div>
   </main>
 </template>

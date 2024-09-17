@@ -141,7 +141,13 @@ footer {
             border: 2px solid var(--electric-blue);
             padding: 15px;
             font-weight: 300;
+
+            &:hover {
+                background-color: var(--electric-blue);
+            }
         }
+
+
 
         #social {
             display: flex;
@@ -155,6 +161,12 @@ footer {
             #social-icons * {
                 margin: 0 5px;
                 cursor: pointer;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: white;
+                    box-shadow: 0 0 10px white;
+                }
             }
         }
     }
