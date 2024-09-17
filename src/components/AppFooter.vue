@@ -2,16 +2,27 @@
 export default {
     data() {
         return {
-            dcComicsLinks: [
-                "Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"
-            ],
+            linkLists: [
+                {
+                    name: "DC COMICS",
+                    links: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
+                },
 
-            shopLinks: ["Shop DC", "Shop DC Collectibles"],
+                {
+                    name: "SHOP",
+                    "links": ["Shop DC", "Shop DC Collectibles"]
+                },
 
-            dcLinks: ["Terms of Use", "Privacy Policy (New)", "Ad choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact us"],
+                {
+                    name: "DC",
+                    links: ["Terms of Use", "Privacy Policy (New)", "Ad choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact us"],
+                },
 
-            sitesLinks: ["DC", "MAD Magazine", "DCkids", "DC Universe", "DC Power Visa"]
-
+                {
+                    name: "SITES",
+                    links: ["DC", "MAD Magazine", "DCkids", "DC Universe", "DC Power Visa"]
+                }
+            ]
         }
     }
 }
@@ -23,33 +34,13 @@ export default {
         <section id="footer-navbar">
             <div class="container">
                 <div class="nav-menu">
-                    <div class="nav-links">
-                        <h3>DC COMICS</h3>
+                    <div class="nav-links" v-for="linkList in linkLists">
+                        <h3>{{ linkList.name }}</h3>
                         <ul>
-                            <li v-for="link in dcComicsLinks">{{ link }}</li>
+                            <li v-for="link in linkList.links">{{ link }}</li>
                         </ul>
                     </div>
 
-                    <div class="nav-links">
-                        <h3>SHOP</h3>
-                        <ul>
-                            <li v-for="link in shopLinks">{{ link }}</li>
-                        </ul>
-                    </div>
-
-                    <div class="nav-links">
-                        <h3>DC</h3>
-                        <ul>
-                            <li v-for="link in dcLinks">{{ link }}</li>
-                        </ul>
-                    </div>
-
-                    <div class="nav-links">
-                        <h3>SITES</h3>
-                        <ul>
-                            <li v-for="link in sitesLinks">{{ link }}</li>
-                        </ul>
-                    </div>
                 </div>
 
                 <div class="big-dc-logo">
