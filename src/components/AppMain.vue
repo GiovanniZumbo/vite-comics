@@ -94,8 +94,10 @@ export default {
 <template>
   <main>
     <div class="container">
+      <!-- Label -->
       <SectionLabel />
 
+      <!-- Card Gallery -->
       <div class="row">
         <div class="col" v-for="comic in comicsList">
           <div class="card">
@@ -104,7 +106,11 @@ export default {
         </div>
       </div>
 
-      <PageButton />
+      <!-- Button -->
+      <div class="div-btn">
+        <PageButton />
+      </div>
+
     </div>
   </main>
 </template>
@@ -132,6 +138,12 @@ main {
 .col {
   flex-basis: calc((100%/6) - 10px);
   height: 250px;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px
 }
 
 h2 {

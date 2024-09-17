@@ -140,7 +140,7 @@ footer {
             color: white;
             border: 2px solid var(--electric-blue);
             padding: 15px;
-            font-weight: 300;
+            font-weight: 600;
 
             &:hover {
                 background-color: var(--electric-blue);

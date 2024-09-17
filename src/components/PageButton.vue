@@ -22,12 +22,14 @@ div {
     height: 40px;
     background-color: var(--electric-blue);
     cursor: pointer;
-    margin: 10px 0;
+
+
 
     p {
         color: white;
         text-align: center;
         line-height: 40px;
+        font-weight: 600;
     }
 }
 </style>
