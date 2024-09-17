@@ -4,6 +4,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppShopBanner from './components/AppShopBanner.vue';
+import JumboBanner from './components/JumboBanner.vue';
 
 
 
@@ -19,6 +20,7 @@ export default {
     AppMain,
     AppFooter,
     AppShopBanner,
+    JumboBanner
 
   }
 
@@ -32,6 +34,7 @@ export default {
     <div>
 
       <AppHeader />
+      <JumboBanner />
       <AppMain />
       <AppShopBanner />
       <AppFooter />
