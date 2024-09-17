@@ -1,5 +1,6 @@
 <script>
 import ComicCard from './ComicCard.vue';
+import SectionLabel from './SectionLabel.vue';
 
 export default {
   data() {
@@ -82,7 +83,8 @@ export default {
   },
 
   components: {
-    ComicCard
+    ComicCard,
+    SectionLabel
   }
 }
 </script>
@@ -90,6 +92,8 @@ export default {
 <template>
   <main>
     <div class="container">
+      <SectionLabel />
+
       <div class="row">
         <div class="col" v-for="comic in comicsList">
           <div class="card">
@@ -104,6 +108,9 @@ export default {
 <style lang="scss" scoped>
 main {
   background-color: #1c1c1c;
+
+  // position linked to SectionLabel
+  position: relative;
 }
 
 .container {

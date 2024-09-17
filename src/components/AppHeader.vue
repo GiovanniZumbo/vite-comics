@@ -33,10 +33,10 @@ main {
 
 .container {
   height: 100%;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 ul {
