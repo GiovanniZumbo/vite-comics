@@ -90,7 +90,13 @@ export default {
 <template>
   <main>
     <div class="container">
-      <ComicCard />
+      <div class="row">
+        <div class="col">
+          <div class="card" v-for="(comic, i) in comicsList">
+            <ComicCard :thumbUrl="comic.thumb" :series="comic.series" />
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>

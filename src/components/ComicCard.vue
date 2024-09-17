@@ -4,15 +4,28 @@ export default {
         return {
 
         }
+    },
+
+    props: {
+        thumbUrl: {
+            type: String,
+            required: true,
+        },
+
+        series: {
+            type: String,
+            required: true,
+        }
     }
 }
+
 </script>
 
 <template>
 
     <figure class="comic-card">
-        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        <figcaption> ACTION COMICS </figcaption>
+        <img :src="thumbUrl" alt="">
+        <figcaption> {{ series }} </figcaption>
     </figure>
 
 </template>
